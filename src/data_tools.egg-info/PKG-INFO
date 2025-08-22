@@ -1,0 +1,19 @@
+Metadata-Version: 2.4
+Name: data_tools
+Version: 0.1.0
+Summary: Projet Data Science avec monPackage
+Author: Etudiant Data Science
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: numpy
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: black; extra == "dev"
+Requires-Dist: isort; extra == "dev"
+Requires-Dist: mypy; extra == "dev"
+Requires-Dist: build; extra == "dev"
+
+# data_tools
+
+Projet Data Science exemple avec monPackage.

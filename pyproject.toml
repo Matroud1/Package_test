@@ -1,0 +1,36 @@
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "data_tools"
+version = "0.1.0"
+description = "Projet Data Science avec monPackage"
+authors = [{name="Etudiant Data Science"}]
+readme = "README.md"
+requires-python = ">=3.9"
+dynamic = ["dependencies", "optional-dependencies"]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+optional-dependencies = {dev = {file = ["requirements-dev.txt"]}}
+
+[tool.black]
+line-length = 100
+target-version = ["py39"]
+
+[tool.isort]
+profile = "black"
+line_length = 100
+
+[tool.mypy]
+python_version = "3.9"
+disallow_untyped_defs = true
+ignore_missing_imports = true

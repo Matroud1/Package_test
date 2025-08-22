@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+requirements-dev.txt
+requirements.txt
+src/data_tools.egg-info/PKG-INFO
+src/data_tools.egg-info/SOURCES.txt
+src/data_tools.egg-info/dependency_links.txt
+src/data_tools.egg-info/requires.txt
+src/data_tools.egg-info/top_level.txt
+src/monPackage/__init__.py
+src/monPackage/__main__.py
+src/monPackage/nettoyage.py
+src/monPackage/stats.py
+tests/test_basic.py
