@@ -1,4 +1,6 @@
+import pandas as pd
 
-def nettoyer_texte(texte: str) -> str:
-    """Nettoie un texte en supprimant espaces inutiles"""
-    return " ".join(texte.split())
+def supprimer_na(series: pd.Series) -> pd.Series:
+    """Supprime les valeurs manquantes (None ou NaN)"""
+    return series.dropna()
+

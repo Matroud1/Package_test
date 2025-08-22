@@ -1,4 +1,8 @@
+import pandas as pd
 
-def moyenne(liste):
-    """Calcule la moyenne d'une liste de nombres"""
-    return sum(liste) / len(liste) if liste else 0
+def moyenne(series: pd.Series) -> float:
+    return series.mean()
+
+def ecart_type(series: pd.Series) -> float:
+    return series.std()
+
